@@ -1,16 +1,16 @@
 # Description
 
-YalRF is an open-source circuit simulator written in Python. The package contains an API for netlist description and circuit simulation. The generated data can be easily post-processed using numpy and Jupyter Notebooks.
+PyHBSim is an open-source circuit simulator written in Python. The package contains an API for netlist description and circuit simulation. The generated data can be easily post-processed using numpy and Jupyter Notebooks.
 
 The main goal of this project is to implement a stable and powerful multi-tone harmonic balance engine with support to autonomous circuits.
 
-Another goal will be to integrate YalRF with the scikit-rf / openEMS / SignalIntegrity packages.
+Another goal will be to integrate PyHBSim with the scikit-rf / openEMS / SignalIntegrity packages.
 
 Example of usage:
 ```python
 import matplotlib.pyplot as plt
-from yalrf import Netlist
-from yalrf.Analyses import MultiToneHarmonicBalance
+from PyHBSim import Netlist
+from PyHBSim.Analyses import MultiToneHarmonicBalance
 
 net = Netlist('Peltz Oscillator')
 
@@ -92,7 +92,7 @@ The API for netlist description was based on ahkab. Many device models currently
 - [ ] move integration to transient analysis
 - [ ] review log messages to see if the type make sense (info, warning, error)
 - [ ] exception handling instead of all the ifs and elses
-- [ ] check at the top of each YalRF.add_device() call if the device name already exists in the netlist
+- [ ] check at the top of each PyHBSim.add_device() call if the device name already exists in the netlist
 - [ ] check if the netlist has at least one purposely placed gnd node
 - [ ] subcircuit support
 - [ ] remove devices from netlist

@@ -4,9 +4,9 @@ tags
 *.pyc
 *.pyo
 
-yalrf/__pycache__/
-yalrf/Analyses/__pycache__/
-yalrf/Devices/__pycache__/
+PyHBSim/__pycache__/
+PyHBSim/Analyses/__pycache__/
+PyHBSim/Devices/__pycache__/
 test/__pycache__/
 .vscode/
 .git/
